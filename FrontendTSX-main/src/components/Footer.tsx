@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 
-const Footer = () => {
+const Footer: React.FC = () => {
   const [showBackToTop, setShowBackToTop] = useState(false);
 
   useEffect(() => {
@@ -47,7 +47,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center">
           <h2 className="text-2xl font-bold mb-8 text-blue-400 hover:text-blue-300 transition-colors duration-300">
-            ARStore
+       ARStore
           </h2>
           
           <nav className="flex flex-wrap justify-center gap-8 mb-8">
